@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contact - JPS</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <a class="nav-bar__logo" href="../index.html">JPS</a>
+            <ul class="nav-bar__list">
+                <li class="nav-bar__listitem"><a class="nav-bar__anchor" href="../index.html">Home</a></li>
+                <li class="nav-bar__listitem"><a class="nav-bar__anchor" href="./projects.html">Projects</a></li>
+                <li class="nav-bar__listitem"><a class="nav-bar__anchor" href="./skills.html">Skills</a></li>
+                <li class="nav-bar__listitem"><a class="nav-bar__anchor" href="./about.html">About</a></li>
+                <li class="nav-bar__listitem"><a class="nav-bar__anchor nav-bar__active-item" href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <article class="contact">
+                <fieldset class="contact__fieldset">
+                    <legend class="contact__legend">Please enter contact information</legend>
+                    <form class="contact__form" action="#">
+                        <label class="contact__labels" for="name">Full name
+                            <br>
+                            <input class="contact__inputs" type="text" placeholder="juan skobalski" name="name">
+                        </label>
+                        <br>
+                        <br>
+                        <label class="contact__labels" for="title">Title
+                            <br>
+                            <input class="contact__inputs" type="text" placeholder="title" name="title">
+                        </label>
+                        <br>
+                        <br>
+                        <label class="contact__labels" for="email">Email
+                            <br>
+                            <input class="contact__inputs" type="email" placeholder="name@gmail.com" name="email"><br>
+                        </label>
+                        <br>
+                        <label class="contact__labels" for="description">Description
+                            <br>
+                            <textarea class="contact__textarea"></textarea>
+                        </label>
+                        <br>
+                        <input class="contact__button" type="submit" value="Send">
+                        <input class="contact__button" type="reset" value="Refresh">
+                    </form>
+                </fieldset>
+            </article>
+        </section> 
+    </main>
+
+    <footer class="footer">
+        <div>
+            <a href="https://www.linkedin.com/in/jpskob" target="_blank"><img class="footer__img" src="../img/linkedin.png" width="32" height="32"></a>
+            <a href="https://github.com/jpskobalski" target="_blank"><img class="footer__img" src="../img/github.png" width="32" height="32"></a>
+        </div>
+        <div class="left">© 2022 - Juan Pablo Skobalski</div>
+    </footer>   
+</body>
+</html>
