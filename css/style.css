@@ -414,8 +414,13 @@ body{
     /* --- ABOUT --- */
     /* --- ----- --- */
 
+    .about{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
     .about__article{
-        padding: 1rem;
+        padding: 0;
     }
 
     .about__h2{
