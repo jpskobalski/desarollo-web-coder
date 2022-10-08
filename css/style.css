@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body{
     background-color: #353132;
     font-family: 'Roboto', sans-serif;
 }
+
+/* --- ------ --- */
+/* --- NAVBAR --- */
+/* --- ------ --- */
 
 .nav-bar{
     height: 5rem;
@@ -52,6 +53,10 @@ body{
 .nav-bar__active-item:hover{
     text-decoration: overline aliceblue;
 }
+
+/* --- ----- --- */
+/* --- INDEX --- */
+/* --- ----- --- */
 
 .main-index{
     display: flex;
@@ -108,6 +113,10 @@ body{
     font-family: 'Orbitron', sans-serif;
 }
 
+/* --- ------- --- */
+/* --- PROJECT --- */
+/* --- ------- --- */
+
 .projects{
     display: flex;
     flex-direction: column;
@@ -143,6 +152,10 @@ body{
     text-align: justify;
     font-weight: bold;
 }
+
+/* --- ----- --- */
+/* --- SKILL --- */
+/* --- ----- --- */
 
 .skills{
     display: flex;
@@ -186,6 +199,10 @@ body{
     text-justify: inter-word;
 }
 
+/* --- ----- --- */
+/* --- ABOUT --- */
+/* --- ----- --- */
+
 .about{
     display: flex;
     align-items: center;
@@ -222,6 +239,10 @@ body{
     font-weight: bold;
     line-height: 2.5rem;
 }
+
+/* --- ------- --- */
+/* --- CONTACT --- */
+/* --- ------- --- */
 
 .contact{
     display: flex;
@@ -295,6 +316,10 @@ body{
     color: aliceblue;
     border: solid 1px black;
 }
+
+/* --- ------ --- */
+/* --- FOOTER --- */
+/* --- ------ --- */
 
 .footer{
     padding-top: 1.7rem;
