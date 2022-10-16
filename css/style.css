@@ -33,6 +33,21 @@ body{
     color:#bd00ff;
 }
 
+.nav-bar__container{
+    display: flex;
+    position: relative;
+    text-align: center;
+    justify-content:flex-end;
+}
+
+.nav-bar__list{
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content:flex-end;
+}
+
 .nav-bar__listitem{
     display: inline-block;
     width: 6rem;

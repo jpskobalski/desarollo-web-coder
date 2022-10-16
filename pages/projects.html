@@ -14,16 +14,35 @@
 </head>
 <body>
     <header>
-        <nav class="nav-bar">
-            <a class="nav-bar__logo" href="../index.html">JPS</a>
-            <ul class="nav-bar__list">
-                <li class="nav-bar__listitem"><a class="nav-bar__anchor" href="../index.html">Home</a></li>
-                <li class="nav-bar__listitem"><a class="nav-bar__anchor nav-bar__active-item" href="#">Projects</a></li>
-                <li class="nav-bar__listitem"><a class="nav-bar__anchor" href="./skills.html">Skills</a></li>
-                <li class="nav-bar__listitem"><a class="nav-bar__anchor" href="./about.html">About</a></li>
-                <li class="nav-bar__listitem"><a class="nav-bar__anchor" href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <div class="row align-items-center position-relative">
+                <nav class="navbar navbar-expand-lg navbar-dark nav-bar">
+                    <a class="navbar-brand nav-bar__logo" href="#">JPS</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    <div class="collapse navbar-collapse mr-auto" id="navbarText">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 nav-bar__list">
+                            <li class="nav-item nav-bar__listitem">
+                                <a class="nav-link nav-bar__anchor active" aria-current="page"  href="../index.html">Home</a>
+                            </li>
+                            <li class="nav-item nav-bar__listitem">
+                                <a class="nav-link nav-bar__anchor" href="#">Projects</a>
+                            </li>
+                            <li class="nav-item nav-bar__listitem">
+                                <a class="nav-link nav-bar__anchor" href="./skills.html">Skills</a>
+                            </li>
+                            <li class="nav-item nav-bar__listitem">
+                                <a class="nav-link nav-bar__anchor" href="./about.html">About</a>
+                            </li>
+                            <li class="nav-item nav-bar__listitem">
+                                <a class="nav-link nav-bar__anchor" href="./contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <main>
