@@ -379,11 +379,77 @@ body{
     filter:invert(0%);
 }
 
-/* Elegi 425 dado que incluye a aquellos celulares tamanio Large basandome en las recomendaciones de google chrome */
+@media screen and (max-width: 321px) {
+
+    /* --- ----- --- */
+    /* --- INDEX --- */
+    /* --- ----- --- */
+
+    .main-index{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../img/background.gif);
+        background-size:auto;
+    }
+
+    .main-index__section{
+        padding-top: 10%;
+        padding-bottom: 10%;
+        padding-right: 5%;
+        padding-left: 5%;
+        color: aliceblue;
+    }
+
+    .main-index__h2{
+        font-size: 1.5rem;
+    }
+
+    .main-index__strong{
+        font-size: 1.5rem;
+    }
+
+    .main-index__p{
+        font-size: 1rem;
+    }
+    
+}
+
 @media screen and (max-width: 425px) {
 
+    /* --- ----- --- */
+    /* --- INDEX --- */
+    /* --- ----- --- */
 
-    
+    .main-index{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../img/background.gif);
+        background-size:auto;
+    }
+
+    .main-index__section{
+        margin-top: 10%;
+        margin-bottom: 10%;
+        padding-top: 30%;
+        padding-bottom: 30%;
+        padding-right: 5%;
+        padding-left: 5%;
+        color: aliceblue;
+    }
+
+    .main-index__h2{
+        font-size: 2rem;
+    }
+
+    .main-index__strong{
+        font-size: 2rem;
+    }
+
+    .main-index__p{
+        font-size: 1.5rem;
+    }
 
     /* --- ------- --- */
     /* --- PROJECT --- */
