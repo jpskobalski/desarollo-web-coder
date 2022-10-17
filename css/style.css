@@ -431,14 +431,6 @@ body{
     /* --- INDEX --- */
     /* --- ----- --- */
 
-    .main-index{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-image: url(../img/background.gif);
-        background-size:auto;
-    }
-
     .main-index__section{
         padding-top: 30%;
         padding-bottom: 30%;
@@ -570,5 +562,129 @@ body{
 
     .contact__button{
         width: 5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /* --- ----- --- */
+    /* --- INDEX --- */
+    /* --- ----- --- */
+
+    .main-index__h2{
+        font-size: 3rem;
+    }
+
+    .main-index__strong{
+        font-size: 3rem;
+    }
+
+    /* --- ------- --- */
+    /* --- PROJECT --- */
+    /* --- ------- --- */
+
+    .projects{
+        padding: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    
+    .projects__article{
+        padding: 2rem;
+    }
+    
+    .projects__h2{
+        top: 2rem;
+        left: 2rem;
+    }
+    
+    .projects__p{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    /* --- ----- --- */
+    /* --- SKILL --- */
+    /* --- ----- --- */
+
+    .skills__h2{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        padding: 1rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .skills__list{
+        margin-right: 5%;
+        margin-left: 5%;
+        text-align: center;
+        padding-left: 1rem;
+    }
+
+    .skills__list-item{
+        width: 25%;
+        padding-left: 10px;
+        font-size: 1rem;
+        font-weight:bold;
+    }
+
+    .skills__p{
+        font-size: 1.5rem;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    /* --- ----- --- */
+    /* --- ABOUT --- */
+    /* --- ----- --- */
+
+    .about{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .about__article{
+        padding: 1rem;
+    }
+
+    .about__h2{
+        padding-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    .about__strong{
+        font-size: 2rem;
+    }
+
+    .about__p{
+        padding: 1rem;
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    /* --- ------- --- */
+    /* --- CONTACT --- */
+    /* --- ------- --- */
+
+    .contact__labels{
+        font-size: 1.5rem;
+    }
+
+    .contact__inputs{
+        width: 25rem;
+    }
+
+    .contact__textarea{
+        height: 10rem;
+        width: 25rem;
+        font-size: 1.5rem;
+        border: solid 2px #bd00ff
+    }
+
+    .contact__button{
+        width: 8rem;
     }
 }
