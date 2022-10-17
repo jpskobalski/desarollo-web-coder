@@ -34,11 +34,9 @@ body{
 }
 
 .nav-bar__list{
-    display: flex;
+    background:#353132;
     position: relative;
-    text-align: center;
-    align-items: center;
-    justify-content:flex-end;
+    z-index: 1000
 }
 
 .nav-bar__listitem{
@@ -49,7 +47,7 @@ body{
 .nav-bar__anchor{
     color: aliceblue;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.5rem;nav-bar__list
 }
 
 .nav-bar__anchor:hover{
@@ -222,19 +220,22 @@ body{
 .skills__list{
     text-align: center;
     border: solid #bd00ff;
-    margin-right: 15%;
-    margin-left: 15%;
-    background-image: url(../img/bg2.gif);
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .skills__list-item{
     color: aliceblue;
-    height: 11rem;
     list-style-type: none;
-    width: 16%;
-    padding: 30px;
+    width: 15%;
+    padding: 2rem;
     float: left;
     text-align: center;
+    font-weight: bold;
+}
+
+.skills__img{
+    width: 100%;
 }
 
 .skills__p{
@@ -379,17 +380,13 @@ body{
     filter:invert(0%);
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 320px) {
 
     /* --- ----- --- */
     /* --- INDEX --- */
     /* --- ----- --- */
 
     .main-index{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-image: url(../img/background.gif);
         background-size:auto;
     }
 
@@ -402,15 +399,28 @@ body{
     }
 
     .main-index__h2{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .main-index__strong{
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 
     .main-index__p{
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+
+    .main-index__button{
+        width: 7rem;
+        height: 1.7rem;
+        padding: 5px;
+        margin-left: 5px;
+        border-radius: 3px;
+        color: aliceblue;
+        font-size: 0.8rem;
+        font-weight: 100;
+        line-height: 15px;
+        font-family: 'Orbitron', sans-serif;
     }
     
 }
@@ -430,8 +440,6 @@ body{
     }
 
     .main-index__section{
-        margin-top: 10%;
-        margin-bottom: 10%;
         padding-top: 30%;
         padding-bottom: 30%;
         padding-right: 5%;
@@ -481,6 +489,36 @@ body{
         padding: 0.3rem;
         line-height: 0.5rem;
         font-size: small;  
+    }
+
+    /* --- ----- --- */
+    /* --- SKILL --- */
+    /* --- ----- --- */
+
+    .skills__h2{
+        padding-top: 3rem;;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .skills__list{
+        margin-right: 2%;
+        margin-left: 2%;
+        text-align: center;
+        padding-left: 1rem;
+    }
+
+    .skills__list-item{
+        width: 25%;
+        padding-left: 10px;
+        font-size: 1rem;
+        font-weight:bold;
+    }
+
+    .skills__p{
+        font-size: 1.2rem;
+        padding-right: 10%;
+        padding-left: 10%;
     }
 
     /* --- ----- --- */
