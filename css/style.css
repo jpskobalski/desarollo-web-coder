@@ -380,7 +380,7 @@ body{
     filter:invert(0%);
 }
 
-@media screen and (max-width: 320px) {
+@media only screen and (min-width: 320px) {
 
     /* --- ----- --- */
     /* --- INDEX --- */
@@ -391,8 +391,10 @@ body{
     }
 
     .main-index__section{
-        padding-top: 10%;
-        padding-bottom: 10%;
+        margin-bottom: 10%;
+        margin-top: 10%;
+        padding-top: 20%;
+        padding-bottom: 20%;
         padding-right: 5%;
         padding-left: 5%;
         color: aliceblue;
@@ -411,21 +413,133 @@ body{
     }
 
     .main-index__button{
-        width: 7rem;
+        width: 6rem;
         height: 1.7rem;
         padding: 5px;
         margin-left: 5px;
         border-radius: 3px;
-        color: aliceblue;
         font-size: 0.8rem;
         font-weight: 100;
         line-height: 15px;
-        font-family: 'Orbitron', sans-serif;
+    }
+
+    /* --- ------- --- */
+    /* --- PROJECT --- */
+    /* --- ------- --- */
+
+    .projects{
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .projects__article{
+        padding: 0.5rem;
+    }
+    
+    .projects__h2{
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+    
+    .projects__p{
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+    
+    .projects__button{
+        width: 7rem;
+        height: 2rem;
+        padding: 0.3rem;
+        line-height: 0.5rem;
+        font-size: small;  
+    }
+
+    /* --- ----- --- */
+    /* --- SKILL --- */
+    /* --- ----- --- */
+
+    .skills__h2{
+        padding-top: 3rem;
+        padding: 1rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .skills__list{
+        margin-right: 2%;
+        margin-left: 2%;
+        text-align: center;
+        padding-left: 1rem;
+    }
+
+    .skills__list-item{
+        width: 50%;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 1rem;
+        font-weight:bold;
+    }
+
+    .skills__p{
+        font-size: 1.2rem;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    /* --- ----- --- */
+    /* --- ABOUT --- */
+    /* --- ----- --- */
+
+    .about{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .about__article{
+        padding: 0;
+    }
+
+    .about__h2{
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .about__strong{
+        font-size: 1.5rem;
+    }
+
+    .about__p{
+        padding: 0.7rem;
+        line-height: 1.5rem;
+    }
+
+    /* --- ------- --- */
+    /* --- CONTACT --- */
+    /* --- ------- --- */
+
+    .contact__labels{
+        font-size: 1rem;
+    }
+
+    .contact__inputs{
+        width: 12rem;
+    }
+
+    .contact__textarea{
+        height: 10rem;
+        width: 12rem;
+        font-size: 1rem;
+        border: solid 2px #bd00ff
+    }
+
+    .contact__button{
+        width: 5rem;
     }
     
 }
 
-@media screen and (max-width: 425px) {
+@media only screen and (min-width: 425px) {
 
     /* --- ----- --- */
     /* --- INDEX --- */
@@ -565,7 +679,7 @@ body{
     }
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
 
     /* --- ----- --- */
     /* --- INDEX --- */
@@ -674,12 +788,12 @@ body{
     }
 
     .contact__inputs{
-        width: 25rem;
+        width: 15rem;
     }
 
     .contact__textarea{
         height: 10rem;
-        width: 25rem;
+        width: 15rem;
         font-size: 1.5rem;
         border: solid 2px #bd00ff
     }
