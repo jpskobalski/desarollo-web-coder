@@ -313,6 +313,8 @@ body{
     font-size: 1.5rem;
     padding-right: 5%;
     padding-left: 5%;
+    float: none;
+    width: 80%;
 }
 
 .contact__labels{
@@ -380,6 +382,7 @@ body{
     filter:invert(0%);
 }
 
+/* --- celulares pequeños --- */
 @media only screen and (max-width: 321px) {
 
     /* --- ----- --- */
@@ -518,17 +521,24 @@ body{
     /* --- CONTACT --- */
     /* --- ------- --- */
 
+    .contact__legend{
+        color: aliceblue;
+        font-size: 1.2rem;
+        width: 100%;
+        float: left;
+    }
+
     .contact__labels{
         font-size: 1rem;
     }
 
     .contact__inputs{
-        width: 12rem;
+        width: 90%;
     }
 
     .contact__textarea{
         height: 10rem;
-        width: 12rem;
+        width: 90%;
         font-size: 1rem;
         border: solid 2px #bd00ff
     }
@@ -539,6 +549,7 @@ body{
     
 }
 
+/* --- celulares grandes --- */
 @media only screen and (max-width: 426px) {
 
     /* --- ----- --- */
@@ -659,17 +670,24 @@ body{
     /* --- CONTACT --- */
     /* --- ------- --- */
 
+    .contact__legend{
+        color: aliceblue;
+        font-size: 1.2rem;
+        width: 100%;
+        float: left;
+    }
+
     .contact__labels{
         font-size: 1rem;
     }
 
     .contact__inputs{
-        width: 15rem;
+        width: 90%;
     }
 
     .contact__textarea{
         height: 10rem;
-        width: 15rem;
+        width: 90%;
         font-size: 1rem;
         border: solid 2px #bd00ff
     }
@@ -679,6 +697,7 @@ body{
     }
 }
 
+/* --- tablets --- */
 @media only screen and (max-width: 769px) {
 
     /* --- ----- --- */
@@ -783,17 +802,24 @@ body{
     /* --- CONTACT --- */
     /* --- ------- --- */
 
+    .contact__legend{
+        color: aliceblue;
+        font-size: 1.2rem;
+        width: 100%;
+        float: left;
+    }
+
     .contact__labels{
         font-size: 1.5rem;
     }
 
     .contact__inputs{
-        width: 15rem;
+        width: 90%;
     }
 
     .contact__textarea{
         height: 10rem;
-        width: 15rem;
+        width: 90%;
         font-size: 1.5rem;
         border: solid 2px #bd00ff
     }
