@@ -447,6 +447,7 @@ body{
         padding-left: 10px;
         font-size: 1rem;
         font-weight:bold;
+        text-align: center;
     }
 
     .skills__p{
@@ -596,6 +597,7 @@ body{
         padding-left: 10px;
         font-size: 1rem;
         font-weight:bold;
+        text-align: center;
     }
 
     .skills__p{
@@ -758,11 +760,12 @@ body{
     }
 
     .skills__list-item{
-        width: 50%;
+        width: 25%;
         padding-left: 10px;
         padding-right: 10px;
-        font-size: 1rem;
+        font-size: 0.8rem;
         font-weight:bold;
+        text-align: center;
     }
 
     .skills__p{
