@@ -33,6 +33,12 @@ body{
     color:#bd00ff;
 }
 
+.nav-bar__list{
+    background:#353132;
+    position: relative;
+    z-index: 1000
+}
+
 .nav-bar__listitem{
     display: inline-block;
     width: 6rem;
@@ -41,7 +47,7 @@ body{
 .nav-bar__anchor{
     color: aliceblue;
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.5rem;nav-bar__list
 }
 
 .nav-bar__anchor:hover{
@@ -214,19 +220,22 @@ body{
 .skills__list{
     text-align: center;
     border: solid #bd00ff;
-    margin-right: 15%;
-    margin-left: 15%;
-    background-image: url(../img/bg2.gif);
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .skills__list-item{
     color: aliceblue;
-    height: 11rem;
     list-style-type: none;
-    width: 16%;
-    padding: 30px;
+    width: 15%;
+    padding: 2rem;
     float: left;
     text-align: center;
+    font-weight: bold;
+}
+
+.skills__img{
+    width: 100%;
 }
 
 .skills__p{
@@ -304,6 +313,8 @@ body{
     font-size: 1.5rem;
     padding-right: 5%;
     padding-left: 5%;
+    float: none;
+    width: 80%;
 }
 
 .contact__labels{
@@ -371,11 +382,165 @@ body{
     filter:invert(0%);
 }
 
-/* Elegi 425 dado que incluye a aquellos celulares tamanio Large basandome en las recomendaciones de google chrome */
-@media screen and (max-width: 425px) {
+/* --- tablets --- */
+@media (max-width: 768px) {
 
+    /* --- ----- --- */
+    /* --- INDEX --- */
+    /* --- ----- --- */
 
+    .main-index__h2{
+        font-size: 3rem;
+    }
+
+    .main-index__strong{
+        font-size: 3rem;
+    }
+
+    /* --- ------- --- */
+    /* --- PROJECT --- */
+    /* --- ------- --- */
+
+    .projects{
+        padding: 2rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
     
+    .projects__article{
+        padding: 2rem;
+    }
+    
+    .projects__h2{
+        top: 2rem;
+        left: 2rem;
+    }
+    
+    .projects__p{
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    /* --- ----- --- */
+    /* --- SKILL --- */
+    /* --- ----- --- */
+
+    .skills__h2{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        padding: 1rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .skills__list{
+        margin-right: 5%;
+        margin-left: 5%;
+        text-align: center;
+        padding-left: 1rem;
+    }
+
+    .skills__list-item{
+        width: 25%;
+        padding-left: 10px;
+        font-size: 1rem;
+        font-weight:bold;
+        text-align: center;
+    }
+
+    .skills__p{
+        font-size: 1.5rem;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    /* --- ----- --- */
+    /* --- ABOUT --- */
+    /* --- ----- --- */
+
+    .about{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .about__article{
+        padding: 1rem;
+    }
+
+    .about__h2{
+        padding-bottom: 2rem;
+        font-size: 2rem;
+    }
+
+    .about__strong{
+        font-size: 2rem;
+    }
+
+    .about__p{
+        padding: 1rem;
+        line-height: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    /* --- ------- --- */
+    /* --- CONTACT --- */
+    /* --- ------- --- */
+
+    .contact__legend{
+        color: aliceblue;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .contact__labels{
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .contact__inputs{
+        width: 90%;
+    }
+
+    .contact__textarea{
+        height: 10rem;
+        width: 90%;
+        font-size: 1.5rem;
+        border: solid 2px #bd00ff
+    }
+
+    .contact__button{
+        width: 8rem;
+    }
+}
+
+/* --- celulares grandes --- */
+@media (max-width: 425px) {
+
+    /* --- ----- --- */
+    /* --- INDEX --- */
+    /* --- ----- --- */
+
+    .main-index__section{
+        padding-top: 30%;
+        padding-bottom: 30%;
+        padding-right: 5%;
+        padding-left: 5%;
+        color: aliceblue;
+    }
+
+    .main-index__h2{
+        font-size: 2rem;
+    }
+
+    .main-index__strong{
+        font-size: 2rem;
+    }
+
+    .main-index__p{
+        font-size: 1.5rem;
+    }
 
     /* --- ------- --- */
     /* --- PROJECT --- */
@@ -410,6 +575,38 @@ body{
     }
 
     /* --- ----- --- */
+    /* --- SKILL --- */
+    /* --- ----- --- */
+
+    .skills__h2{
+        padding-top: 3rem;
+        padding: 1rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .skills__list{
+        margin-right: 2%;
+        margin-left: 2%;
+        text-align: center;
+        padding-left: 1rem;
+    }
+
+    .skills__list-item{
+        width: 25%;
+        padding-left: 10px;
+        font-size: 1rem;
+        font-weight:bold;
+        text-align: center;
+    }
+
+    .skills__p{
+        font-size: 1.2rem;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    /* --- ----- --- */
     /* --- ABOUT --- */
     /* --- ----- --- */
 
@@ -435,4 +632,204 @@ body{
         padding: 0.7rem;
         line-height: 1.5rem;
     }
+
+    /* --- ------- --- */
+    /* --- CONTACT --- */
+    /* --- ------- --- */
+
+    .contact__legend{
+        color: aliceblue;
+        font-size: 1.2rem;
+        width: 100%;
+        float: left;
+    }
+
+    .contact__labels{
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .contact__inputs{
+        width: 90%;
+    }
+
+    .contact__textarea{
+        height: 10rem;
+        width: 90%;
+        font-size: 1rem;
+        border: solid 2px #bd00ff
+    }
+
+    .contact__button{
+        width: 5rem;
+    }
+}
+
+/* --- celulares pequeños --- */
+@media (max-width: 320px) {
+
+    /* --- ----- --- */
+    /* --- INDEX --- */
+    /* --- ----- --- */
+
+    .main-index{
+        background-size:auto;
+    }
+
+    .main-index__section{
+        margin-bottom: 10%;
+        margin-top: 10%;
+        padding-top: 20%;
+        padding-bottom: 20%;
+        padding-right: 5%;
+        padding-left: 5%;
+        color: aliceblue;
+    }
+
+    .main-index__h2{
+        font-size: 1.2rem;
+    }
+
+    .main-index__strong{
+        font-size: 1.2rem;
+    }
+
+    .main-index__p{
+        font-size: 0.8rem;
+    }
+
+    .main-index__button{
+        width: 6rem;
+        height: 1.7rem;
+        padding: 5px;
+        margin-left: 5px;
+        border-radius: 3px;
+        font-size: 0.8rem;
+        font-weight: 100;
+        line-height: 15px;
+    }
+
+    /* --- ------- --- */
+    /* --- PROJECT --- */
+    /* --- ------- --- */
+
+    .projects{
+        padding: 1rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+    }
+
+    .projects__article{
+        padding: 0.5rem;
+    }
+    
+    .projects__h2{
+        top: 0.5rem;
+        left: 0.5rem;
+    }
+    
+    .projects__p{
+        font-size: 0.8rem;
+        font-weight: 100;
+    }
+    
+    .projects__button{
+        width: 7rem;
+        height: 2rem;
+        padding: 0.3rem;
+        line-height: 0.5rem;
+        font-size: small;  
+    }
+
+    /* --- ----- --- */
+    /* --- SKILL --- */
+    /* --- ----- --- */
+
+    .skills__h2{
+        padding-top: 3rem;
+        padding: 1rem;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .skills__list{
+        margin-right: 2%;
+        margin-left: 2%;
+        text-align: center;
+        padding-left: 1rem;
+    }
+
+    .skills__list-item{
+        width: 25%;
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 0.8rem;
+        font-weight:bold;
+        text-align: center;
+    }
+
+    .skills__p{
+        font-size: 1.2rem;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    /* --- ----- --- */
+    /* --- ABOUT --- */
+    /* --- ----- --- */
+
+    .about{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .about__article{
+        padding: 0;
+    }
+
+    .about__h2{
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .about__strong{
+        font-size: 1.5rem;
+    }
+
+    .about__p{
+        padding: 0.7rem;
+        line-height: 1.5rem;
+    }
+
+    /* --- ------- --- */
+    /* --- CONTACT --- */
+    /* --- ------- --- */
+
+    .contact__legend{
+        color: aliceblue;
+        font-size: 1.2rem;
+        width: 100%;
+        float: left;
+    }
+
+    .contact__labels{
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    .contact__inputs{
+        width: 90%;
+    }
+
+    .contact__textarea{
+        height: 10rem;
+        width: 90%;
+        font-size: 1rem;
+        border: solid 2px #bd00ff
+    }
+
+    .contact__button{
+        width: 5rem;
+    }
+    
 }
