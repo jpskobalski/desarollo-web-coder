@@ -1,3 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #353132;
+  font-family: 'Roboto', sans-serif; }
+
 .nav-bar {
   height: 5rem;
   display: flex;
