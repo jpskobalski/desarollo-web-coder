@@ -1,0 +1,49 @@
+.nav-bar{
+    height: 5rem;
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+
+    &__logo{
+        text-decoration: none;
+        color:aliceblue;
+        font-family: 'Orbitron', sans-serif;
+        font-size: 2rem;
+    }
+    
+    &__logo:hover{
+        color:#bd00ff;
+    }
+    
+    &__list{
+        background:#353132;
+        position: relative;
+        z-index: 1000
+    }
+    
+    &__listitem{
+        display: inline-block;
+        width: 6rem;
+    }
+    
+    &__anchor{
+        color: aliceblue;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+    
+    &__anchor:hover{
+        color:#bd00ff;
+        font-weight: bold;
+    }
+    
+    &__active-item{
+        text-decoration: overline #bd00ff;
+    }
+    
+    &__active-item:hover{
+        text-decoration: overline aliceblue;
+    }
+}
