@@ -12,7 +12,7 @@ body {
   height: 5rem;
   display: flex;
   align-items: center;
-  justify-content: center;
+  text-align: center;
   position: relative;
   justify-content: space-around; }
   .nav-bar__logo {

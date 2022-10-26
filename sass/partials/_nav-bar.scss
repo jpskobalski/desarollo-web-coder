@@ -1,6 +1,8 @@
 .nav-bar{
     height: 5rem;
-    @include supercenter;
+    display: flex;
+    align-items: center;
+    text-align: center;
     position: relative;
     justify-content: space-around;
 
