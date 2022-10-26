@@ -2,8 +2,6 @@
     @include supercenter;
     flex-direction: column;
     color: $mainfontcolor;
-    margin-right: 15%;
-    margin-left: 15%;
 
     &__article{
         padding: 5rem;
@@ -28,7 +26,9 @@
     &__p{
         padding-top: 2rem;
         text-align: justify;
-        font-weight: bold;
         line-height: 2.5rem;
+        font-size: 1.2rem;
+        padding-right: 15%;
+        padding-left: 15%;
     }
 }

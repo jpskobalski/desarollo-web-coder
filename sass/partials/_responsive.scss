@@ -98,8 +98,9 @@
         }
     
         &__p{
-            padding: 1rem;
-            line-height: 1.5rem;
+            padding-right: 10%;
+            padding-left: 10%;
+            line-height: 2.5rem;
             font-size: 1.2rem;
         }
     }
@@ -254,8 +255,9 @@
         }
     
         &__p{
-            padding: 0.7rem;
-            line-height: 1.5rem;
+            padding-right: 10%;
+            padding-left: 10%;
+            line-height: 2.5rem;
         }
     }
 
@@ -375,8 +377,8 @@
 
     .skills{
         &__h2{
-            padding-top: 3rem;
             padding: 1rem;
+            padding-top: 3rem;
             text-align: center;
             font-weight: bold;
         }
@@ -426,8 +428,9 @@
         }
     
         &__p{
-            padding: 0.7rem;
-            line-height: 1.5rem;
+            padding-right: 10%;
+            padding-left: 10%;
+            line-height: 2.5rem;
         }
     }
 

@@ -181,9 +181,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: aliceblue;
-  margin-right: 15%;
-  margin-left: 15%; }
+  color: aliceblue; }
   .about__article {
     padding: 5rem;
     text-align: center; }
@@ -199,8 +197,10 @@ body {
   .about__p {
     padding-top: 2rem;
     text-align: justify;
-    font-weight: bold;
-    line-height: 2.5rem; }
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    padding-right: 15%;
+    padding-left: 15%; }
 
 .contact {
   display: flex;
@@ -330,8 +330,9 @@ body {
     .about__strong {
       font-size: 2rem; }
     .about__p {
-      padding: 1rem;
-      line-height: 1.5rem;
+      padding-right: 10%;
+      padding-left: 10%;
+      line-height: 2.5rem;
       font-size: 1.2rem; }
   /* --- ------- --- */
   /* --- CONTACT --- */
@@ -428,8 +429,9 @@ body {
     .about__strong {
       font-size: 1.5rem; }
     .about__p {
-      padding: 0.7rem;
-      line-height: 1.5rem; }
+      padding-right: 10%;
+      padding-left: 10%;
+      line-height: 2.5rem; }
   /* --- ------- --- */
   /* --- CONTACT --- */
   /* --- ------- --- */
@@ -506,8 +508,8 @@ body {
   /* --- SKILL --- */
   /* --- ----- --- */
   .skills__h2 {
-    padding-top: 3rem;
     padding: 1rem;
+    padding-top: 3rem;
     text-align: center;
     font-weight: bold; }
   .skills__list {
@@ -540,8 +542,9 @@ body {
     .about__strong {
       font-size: 1.5rem; }
     .about__p {
-      padding: 0.7rem;
-      line-height: 1.5rem; }
+      padding-right: 10%;
+      padding-left: 10%;
+      line-height: 2.5rem; }
   /* --- ------- --- */
   /* --- CONTACT --- */
   /* --- ------- --- */
