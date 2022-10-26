@@ -5,12 +5,14 @@
     /* --- INDEX --- */
     /* --- ----- --- */
 
-    .main-index__h2{
-        font-size: 3rem;
-    }
-
-    .main-index__strong{
-        font-size: 3rem;
+    .main-index{
+        &__h2{
+            font-size: 3rem;
+        }
+    
+        &__strong{
+            font-size: 3rem;
+        }
     }
 
     /* --- ------- --- */
@@ -21,55 +23,57 @@
         padding: 2rem;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
-    }
     
-    .projects__article{
-        padding: 2rem;
-    }
-    
-    .projects__h2{
-        top: 2rem;
-        left: 2rem;
-    }
-    
-    .projects__p{
-        font-size: 1.5rem;
-        font-weight: 400;
+        &__article{
+            padding: 2rem;
+        }
+        
+        &__h2{
+            top: 2rem;
+            left: 2rem;
+        }
+        
+        &__p{
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
     }
 
     /* --- ----- --- */
     /* --- SKILL --- */
     /* --- ----- --- */
 
-    .skills__h2{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-        padding: 1rem;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .skills__list{
-        margin-right: 5%;
-        margin-left: 5%;
-        text-align: center;
-        padding-left: 1rem;
-    }
-
-    .skills__list-item{
-        width: 25%;
-        padding-left: 10px;
-        font-size: 1rem;
-        font-weight:bold;
-        text-align: center;
-    }
-
-    .skills__p{
-        font-size: 1.5rem;
-        padding-right: 5%;
-        padding-left: 5%;
+    .skills{
+        &__h2{
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+        }
+    
+        &__list{
+            margin-right: 5%;
+            margin-left: 5%;
+            text-align: center;
+            padding-left: 1rem;
+        }
+    
+        &__list-item{
+            width: 25%;
+            padding-left: 10px;
+            font-size: 1rem;
+            font-weight:bold;
+            text-align: center;
+        }
+    
+        &__p{
+            font-size: 1.5rem;
+            padding-right: 5%;
+            padding-left: 5%;
+        }
     }
 
     /* --- ----- --- */
@@ -79,55 +83,57 @@
     .about{
         margin-right: 0;
         margin-left: 0;
-    }
 
-    .about__article{
-        padding: 1rem;
-    }
-
-    .about__h2{
-        padding-bottom: 2rem;
-        font-size: 2rem;
-    }
-
-    .about__strong{
-        font-size: 2rem;
-    }
-
-    .about__p{
-        padding: 1rem;
-        line-height: 1.5rem;
-        font-size: 1.2rem;
+        &__article{
+            padding: 1rem;
+        }
+    
+        &__h2{
+            padding-bottom: 2rem;
+            font-size: 2rem;
+        }
+    
+        &__strong{
+            font-size: 2rem;
+        }
+    
+        &__p{
+            padding: 1rem;
+            line-height: 1.5rem;
+            font-size: 1.2rem;
+        }
     }
 
     /* --- ------- --- */
     /* --- CONTACT --- */
     /* --- ------- --- */
 
-    .contact__legend{
-        color: $mainfontcolor;
-        font-size: 1.2rem;
-        width: 100%;
-    }
-
-    .contact__labels{
-        font-size: 1.5rem;
-        width: 100%;
-    }
-
-    .contact__inputs{
-        width: 90%;
-    }
-
-    .contact__textarea{
-        height: 10rem;
-        width: 90%;
-        font-size: 1.5rem;
-        border: solid 2px $mainelementcolor
-    }
-
-    .contact__button{
-        width: 8rem;
+    .contact{
+        &__legend{
+            color: $mainfontcolor;
+            font-size: 1.2rem;
+            width: 100%;
+        }
+    
+        &__labels{
+            font-size: 1.5rem;
+            width: 100%;
+        }
+    
+        &__inputs{
+            width: 90%;
+        }
+    
+        &__textarea{
+            height: 10rem;
+            width: 90%;
+            font-size: 1.5rem;
+            border: solid 2px $mainelementcolor
+        }
+    
+        &__button{
+            width: 8rem;
+        }
     }
 }
 
@@ -138,24 +144,26 @@
     /* --- INDEX --- */
     /* --- ----- --- */
 
-    .main-index__section{
-        padding-top: 30%;
-        padding-bottom: 30%;
-        padding-right: 5%;
-        padding-left: 5%;
-        color: $mainfontcolor;
-    }
-
-    .main-index__h2{
-        font-size: 2rem;
-    }
-
-    .main-index__strong{
-        font-size: 2rem;
-    }
-
-    .main-index__p{
-        font-size: 1.5rem;
+    .main-index{
+        &__section{
+            padding-top: 30%;
+            padding-bottom: 30%;
+            padding-right: 5%;
+            padding-left: 5%;
+            color: $mainfontcolor;
+        }
+    
+        &__h2{
+            font-size: 2rem;
+        }
+    
+        &__strong{
+            font-size: 2rem;
+        }
+    
+        &__p{
+            font-size: 1.5rem;
+        }    
     }
 
     /* --- ------- --- */
@@ -166,60 +174,62 @@
         padding: 1rem;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
-    }
     
-    .projects__article{
-        padding: 1rem;
-    }
-    
-    .projects__h2{
-        top: 1rem;
-        left: 1rem;
-    }
-    
-    .projects__p{
-        font-size: 1rem;
-        font-weight: 100;
-    }
-    
-    .projects__button{
-        width: 7rem;
-        height: 2rem;
-        padding: 0.3rem;
-        line-height: 0.5rem;
-        font-size: small;  
+        &__article{
+            padding: 1rem;
+        }
+        
+        &__h2{
+            top: 1rem;
+            left: 1rem;
+        }
+        
+        &__p{
+            font-size: 1rem;
+            font-weight: 100;
+        }
+        
+        &__button{
+            width: 7rem;
+            height: 2rem;
+            padding: 0.3rem;
+            line-height: 0.5rem;
+            font-size: small;  
+        }
     }
 
     /* --- ----- --- */
     /* --- SKILL --- */
     /* --- ----- --- */
 
-    .skills__h2{
-        padding-top: 3rem;
-        padding: 1rem;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .skills__list{
-        margin-right: 2%;
-        margin-left: 2%;
-        text-align: center;
-        padding-left: 1rem;
-    }
-
-    .skills__list-item{
-        width: 25%;
-        padding-left: 10px;
-        font-size: 1rem;
-        font-weight:bold;
-        text-align: center;
-    }
-
-    .skills__p{
-        font-size: 1.2rem;
-        padding-right: 10%;
-        padding-left: 10%;
+    .skills{
+        &__h2{
+            padding-top: 3rem;
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+        }
+    
+        &__list{
+            margin-right: 2%;
+            margin-left: 2%;
+            text-align: center;
+            padding-left: 1rem;
+        }
+    
+        &__list-item{
+            width: 25%;
+            padding-left: 10px;
+            font-size: 1rem;
+            font-weight:bold;
+            text-align: center;
+        }
+    
+        &__p{
+            font-size: 1.2rem;
+            padding-right: 10%;
+            padding-left: 10%;
+        }
     }
 
     /* --- ----- --- */
@@ -229,55 +239,57 @@
     .about{
         margin-right: 0;
         margin-left: 0;
-    }
 
-    .about__article{
-        padding: 0;
-    }
-
-    .about__h2{
-        padding-bottom: 1rem;
-        font-size: 1.5rem;
-    }
-
-    .about__strong{
-        font-size: 1.5rem;
-    }
-
-    .about__p{
-        padding: 0.7rem;
-        line-height: 1.5rem;
+        &__article{
+            padding: 0;
+        }
+    
+        &__h2{
+            padding-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+    
+        &__strong{
+            font-size: 1.5rem;
+        }
+    
+        &__p{
+            padding: 0.7rem;
+            line-height: 1.5rem;
+        }
     }
 
     /* --- ------- --- */
     /* --- CONTACT --- */
     /* --- ------- --- */
 
-    .contact__legend{
-        color: $mainfontcolor;
-        font-size: 1.2rem;
-        width: 100%;
-        float: left;
-    }
-
-    .contact__labels{
-        font-size: 1rem;
-        width: 100%;
-    }
-
-    .contact__inputs{
-        width: 90%;
-    }
-
-    .contact__textarea{
-        height: 10rem;
-        width: 90%;
-        font-size: 1rem;
-        border: solid 2px $mainelementcolor
-    }
-
-    .contact__button{
-        width: 5rem;
+    .contact{
+        &__legend{
+            color: $mainfontcolor;
+            font-size: 1.2rem;
+            width: 100%;
+            float: left;
+        }
+    
+        &__labels{
+            font-size: 1rem;
+            width: 100%;
+        }
+    
+        &__inputs{
+            width: 90%;
+        }
+    
+        &__textarea{
+            height: 10rem;
+            width: 90%;
+            font-size: 1rem;
+            border: solid 2px $mainelementcolor
+        }
+    
+        &__button{
+            width: 5rem;
+        }
     }
 }
 
@@ -290,39 +302,39 @@
 
     .main-index{
         background-size:auto;
-    }
 
-    .main-index__section{
-        margin-bottom: 10%;
-        margin-top: 10%;
-        padding-top: 20%;
-        padding-bottom: 20%;
-        padding-right: 5%;
-        padding-left: 5%;
-        color: $mainfontcolor;
-    }
-
-    .main-index__h2{
-        font-size: 1.2rem;
-    }
-
-    .main-index__strong{
-        font-size: 1.2rem;
-    }
-
-    .main-index__p{
-        font-size: 0.8rem;
-    }
-
-    .main-index__button{
-        width: 6rem;
-        height: 1.7rem;
-        padding: 5px;
-        margin-left: 5px;
-        border-radius: 3px;
-        font-size: 0.8rem;
-        font-weight: 100;
-        line-height: 15px;
+        &__section{
+            margin-bottom: 10%;
+            margin-top: 10%;
+            padding-top: 20%;
+            padding-bottom: 20%;
+            padding-right: 5%;
+            padding-left: 5%;
+            color: $mainfontcolor;
+        }
+    
+        &__h2{
+            font-size: 1.2rem;
+        }
+    
+        &__strong{
+            font-size: 1.2rem;
+        }
+    
+        &__p{
+            font-size: 0.8rem;
+        }
+    
+        &__button{
+            width: 6rem;
+            height: 1.7rem;
+            padding: 5px;
+            margin-left: 5px;
+            border-radius: 3px;
+            font-size: 0.8rem;
+            font-weight: 100;
+            line-height: 15px;
+        }
     }
 
     /* --- ------- --- */
@@ -333,61 +345,63 @@
         padding: 1rem;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6, 1fr);
-    }
 
-    .projects__article{
-        padding: 0.5rem;
-    }
-    
-    .projects__h2{
-        top: 0.5rem;
-        left: 0.5rem;
-    }
-    
-    .projects__p{
-        font-size: 0.8rem;
-        font-weight: 100;
-    }
-    
-    .projects__button{
-        width: 7rem;
-        height: 2rem;
-        padding: 0.3rem;
-        line-height: 0.5rem;
-        font-size: small;  
+        &__article{
+            padding: 0.5rem;
+        }
+        
+        &__h2{
+            top: 0.5rem;
+            left: 0.5rem;
+        }
+        
+        &__p{
+            font-size: 0.8rem;
+            font-weight: 100;
+        }
+        
+        &__button{
+            width: 7rem;
+            height: 2rem;
+            padding: 0.3rem;
+            line-height: 0.5rem;
+            font-size: small;  
+        }
     }
 
     /* --- ----- --- */
     /* --- SKILL --- */
     /* --- ----- --- */
 
-    .skills__h2{
-        padding-top: 3rem;
-        padding: 1rem;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .skills__list{
-        margin-right: 2%;
-        margin-left: 2%;
-        text-align: center;
-        padding-left: 1rem;
-    }
-
-    .skills__list-item{
-        width: 25%;
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 0.8rem;
-        font-weight:bold;
-        text-align: center;
-    }
-
-    .skills__p{
-        font-size: 1.2rem;
-        padding-right: 10%;
-        padding-left: 10%;
+    .skills{
+        &__h2{
+            padding-top: 3rem;
+            padding: 1rem;
+            text-align: center;
+            font-weight: bold;
+        }
+    
+        &__list{
+            margin-right: 2%;
+            margin-left: 2%;
+            text-align: center;
+            padding-left: 1rem;
+        }
+    
+        &__list-item{
+            width: 25%;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 0.8rem;
+            font-weight:bold;
+            text-align: center;
+        }
+    
+        &__p{
+            font-size: 1.2rem;
+            padding-right: 10%;
+            padding-left: 10%;
+        }
     }
 
     /* --- ----- --- */
@@ -397,54 +411,56 @@
     .about{
         margin-right: 0;
         margin-left: 0;
-    }
 
-    .about__article{
-        padding: 0;
-    }
-
-    .about__h2{
-        padding-bottom: 1rem;
-        font-size: 1.5rem;
-    }
-
-    .about__strong{
-        font-size: 1.5rem;
-    }
-
-    .about__p{
-        padding: 0.7rem;
-        line-height: 1.5rem;
+        &__article{
+            padding: 0;
+        }
+    
+        &__h2{
+            padding-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+    
+        &__strong{
+            font-size: 1.5rem;
+        }
+    
+        &__p{
+            padding: 0.7rem;
+            line-height: 1.5rem;
+        }
     }
 
     /* --- ------- --- */
     /* --- CONTACT --- */
     /* --- ------- --- */
 
-    .contact__legend{
-        color: $mainfontcolor;
-        font-size: 1.2rem;
-        width: 100%;
-        float: left;
+    .contact{
+        &__legend{
+            color: $mainfontcolor;
+            font-size: 1.2rem;
+            width: 100%;
+            float: left;
+        }
+    
+        &__labels{
+            font-size: 1rem;
+            width: 100%;
+        }
+    
+        &__inputs{
+            width: 90%;
+        }
+    
+        &__textarea{
+            height: 10rem;
+            width: 90%;
+            font-size: 1rem;
+            border: solid 2px $mainelementcolor
+        }
+    
+        &__button{
+            width: 5rem;
+        }   
     }
-
-    .contact__labels{
-        font-size: 1rem;
-        width: 100%;
-    }
-
-    .contact__inputs{
-        width: 90%;
-    }
-
-    .contact__textarea{
-        height: 10rem;
-        width: 90%;
-        font-size: 1rem;
-        border: solid 2px $mainelementcolor
-    }
-
-    .contact__button{
-        width: 5rem;
-    }   
 }
