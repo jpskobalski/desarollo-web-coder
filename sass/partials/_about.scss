@@ -1,0 +1,36 @@
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: aliceblue;
+    margin-right: 15%;
+    margin-left: 15%;
+
+    &__article{
+        padding: 5rem;
+        text-align: center;
+    }
+    
+    &__h2{
+        padding-bottom: 2rem;
+        font-size: 2rem;
+    }
+    
+    &__strong{
+        color: $mainelementcolor;
+        font-size: 2rem;
+    }
+    
+    &__img{
+        padding: 2px;
+        background-image: url(../img/bg.gif);
+    }
+    
+    &__p{
+        padding-top: 2rem;
+        text-align: justify;
+        font-weight: bold;
+        line-height: 2.5rem;
+    }
+}

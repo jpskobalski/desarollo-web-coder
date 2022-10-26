@@ -1,0 +1,66 @@
+.projects{
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 2rem;
+
+    &__article{
+        color: aliceblue;
+        background-color: rgba(189,0,255,0.2);
+        padding: 2rem;
+        display: flex;
+        position: relative;
+        flex-basis: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    
+    &__img{
+        width: 100%;
+    }
+    
+    &__h2{
+        font-weight: bold;
+        position: absolute;
+        top: 2rem;
+        left: 2rem;
+        background: $mainbackgroundcolor;
+        border: solid 1px $mainelementcolor;
+        padding: 0.4rem 0.8rem;
+    }
+    
+    &__p{
+        font-size: 1rem;
+        padding-top: 1rem;
+        text-align: justify;
+        font-weight: bold;
+    }
+    
+    &__button{
+        margin-top: 1rem;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        width: 10rem;
+        height: 2rem;
+        padding: 0.5rem;
+        background-color:$mainelementcolor;
+        text-align: center;
+        border: solid 1px aliceblue;
+        border-radius: 3px;
+        color: aliceblue;
+        font-weight: bold;
+        line-height: 1rem;
+        font-family: 'Orbitron', sans-serif;    
+    }
+    
+    &__button:hover{
+        background-image: url(../img/bg.gif);
+        filter: invert(100%);
+        color: aliceblue;
+        border: solid 1px black;
+    }
+}
