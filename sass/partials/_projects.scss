@@ -40,10 +40,8 @@
     
     &__button{
         margin-top: 1rem;
-        display: flex;
+        @include supercenter;
         text-decoration: none;
-        align-items: center;
-        justify-content: center;
         width: 10rem;
         height: 2rem;
         padding: 0.5rem;

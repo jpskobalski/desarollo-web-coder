@@ -1,7 +1,5 @@
 .main-index{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include supercenter;
     background-image: url(../img/background.gif);
     background-size:contain;
 
@@ -33,10 +31,8 @@
     
     &__button{
         margin-top: 1rem;
-        display: flex;
+        @include supercenter;
         text-decoration: none;
-        align-items: center;
-        justify-content: center;
         width: 8rem;
         height: 1.7rem;
         padding: 7px;

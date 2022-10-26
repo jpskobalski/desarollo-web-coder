@@ -11,9 +11,9 @@ body {
 .nav-bar {
   height: 5rem;
   display: flex;
-  position: relative;
-  text-align: center;
   align-items: center;
+  justify-content: center;
+  position: relative;
   justify-content: space-around; }
   .nav-bar__logo {
     text-decoration: none;
@@ -66,9 +66,9 @@ body {
   .main-index__button {
     margin-top: 1rem;
     display: flex;
-    text-decoration: none;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
     width: 8rem;
     height: 1.7rem;
     padding: 7px;
@@ -122,9 +122,9 @@ body {
   .projects__button {
     margin-top: 1rem;
     display: flex;
-    text-decoration: none;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
     width: 10rem;
     height: 2rem;
     padding: 0.5rem;

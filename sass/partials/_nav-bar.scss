@@ -1,9 +1,7 @@
 .nav-bar{
     height: 5rem;
-    display: flex;
+    @include supercenter;
     position: relative;
-    text-align: center;
-    align-items: center;
     justify-content: space-around;
 
     &__logo{

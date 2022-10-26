@@ -1,3 +1,9 @@
 $mainbackgroundcolor: #353132;
 $mainelementcolor:#bd00ff;
 $mainfontcolor: aliceblue;
+
+@mixin supercenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

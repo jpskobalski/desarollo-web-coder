@@ -1,7 +1,5 @@
 .contact{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include supercenter;
 
     &__fieldset{
         width: 80%;
