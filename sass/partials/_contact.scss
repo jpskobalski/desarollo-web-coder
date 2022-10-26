@@ -1,0 +1,67 @@
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__fieldset{
+        width: 80%;
+        border: solid $mainelementcolor;
+        text-align: center;
+        padding: 5%;
+        background-color: rgba(189,0,255,0.05);
+    }
+    
+    &__legend{
+        color: aliceblue;
+        font-size: 1.5rem;
+        padding-right: 5%;
+        padding-left: 5%;
+        float: none;
+        width: 80%;
+    }
+    
+    &__labels{
+        color: aliceblue;
+        font-size: 1.5rem;
+    }
+    
+    &__inputs{
+        height: 2rem;
+        width: 30rem;
+        text-align: center;
+        border: solid 2px $mainelementcolor;
+    }
+    
+    &__textarea{
+        height: 10rem;
+        width: 30rem;
+        padding: 1%;
+        text-align: center;  
+        font-size: 1rem;
+        border: solid 2px $mainelementcolor;
+    }
+    
+    &__button{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        text-decoration: none;
+        width: 8rem;
+        height: 1.7rem;
+        padding: 0.5rem;
+        background-color:$mainelementcolor;
+        text-align: center;
+        border: solid 1px aliceblue;
+        border-radius: 3px;
+        color: aliceblue;
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 0.5rem;
+    }
+    
+    &__button:hover{
+        background-image: url(../img/bg.gif);
+        filter: invert(100%);
+        color: aliceblue;
+        border: solid 1px black;
+    }
+}

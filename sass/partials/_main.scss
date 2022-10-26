@@ -1,0 +1,61 @@
+.main-index{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../img/background.gif);
+    background-size:contain;
+
+    &__section{
+        padding: 15%;
+        color: aliceblue;
+    }
+    
+    &__article{
+        background: $mainbackgroundcolor;
+        padding: 1rem;
+        color: aliceblue;
+        border: solid $mainelementcolor;
+    }
+    
+    &__h2{
+        font-size: 3rem;
+    }
+    
+    &__strong{
+        color: $mainelementcolor;
+        font-size: 3rem;
+    }
+    
+    &__p{
+        background: $mainbackgroundcolor;
+        font-size: 2rem;
+    }
+    
+    &__button{
+        margin-top: 1rem;
+        display: flex;
+        text-decoration: none;
+        align-items: center;
+        justify-content: center;
+        width: 8rem;
+        height: 1.7rem;
+        padding: 7px;
+        margin-left: 20px;
+        background-color:$mainelementcolor;
+        float: right;
+        text-align: center;
+        border: solid 1px aliceblue;
+        border-radius: 3px;
+        color: aliceblue;
+        font-weight: bold;
+        line-height: 15px;
+        font-family: 'Orbitron', sans-serif;
+    }
+    
+    &__button:hover{
+        background-image: url(../img/bg.gif);
+        filter: invert(100%);
+        color: aliceblue;
+        border: solid 1px black;
+    }
+}

@@ -1,107 +1,69 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-body{
-    background-color: #353132;
-    font-family: 'Roboto', sans-serif;
-}
+body {
+  background-color: #353132;
+  font-family: 'Roboto', sans-serif; }
 
-/* --- ------ --- */
-/* --- NAVBAR --- */
-/* --- ------ --- */
-
-.nav-bar{
-    height: 5rem;
-    display: flex;
-    position: relative;
-    text-align: center;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.nav-bar__logo{
+.nav-bar {
+  height: 5rem;
+  display: flex;
+  position: relative;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around; }
+  .nav-bar__logo {
     text-decoration: none;
-    color:aliceblue;
+    color: aliceblue;
     font-family: 'Orbitron', sans-serif;
-    font-size: 2rem;
-}
-
-.nav-bar__logo:hover{
-    color:#bd00ff;
-}
-
-.nav-bar__list{
-    background:#353132;
+    font-size: 2rem; }
+  .nav-bar__logo:hover {
+    color: #bd00ff; }
+  .nav-bar__list {
+    background: #353132;
     position: relative;
-    z-index: 1000
-}
-
-.nav-bar__listitem{
+    z-index: 1000; }
+  .nav-bar__listitem {
     display: inline-block;
-    width: 6rem;
-}
-
-.nav-bar__anchor{
+    width: 6rem; }
+  .nav-bar__anchor {
     color: aliceblue;
     text-decoration: none;
-    font-size: 1.5rem;
-}
+    font-size: 1.5rem; }
+  .nav-bar__anchor:hover {
+    color: #bd00ff;
+    font-weight: bold; }
+  .nav-bar__active-item {
+    text-decoration: overline #bd00ff; }
+  .nav-bar__active-item:hover {
+    text-decoration: overline aliceblue; }
 
-.nav-bar__anchor:hover{
-    color:#bd00ff;
-    font-weight: bold;
-}
-
-.nav-bar__active-item{
-    text-decoration: overline #bd00ff;
-}
-
-.nav-bar__active-item:hover{
-    text-decoration: overline aliceblue;
-}
-
-/* --- ----- --- */
-/* --- INDEX --- */
-/* --- ----- --- */
-
-.main-index{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../img/background.gif);
-    background-size:contain;
-}
-
-.main-index__section{
+.main-index {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/background.gif);
+  background-size: contain; }
+  .main-index__section {
     padding: 15%;
-    color: aliceblue;
-}
-
-.main-index__article{
-    background: rgba(35, 31, 32);
+    color: aliceblue; }
+  .main-index__article {
+    background: #353132;
     padding: 1rem;
     color: aliceblue;
-    border: solid #bd00ff;
-}
-
-.main-index__h2{
-    font-size: 3rem;
-}
-
-.main-index__strong{
+    border: solid #bd00ff; }
+  .main-index__h2 {
+    font-size: 3rem; }
+  .main-index__strong {
     color: #bd00ff;
-    font-size: 3rem;
-}
-
-.main-index__p{
-    background: rgba(35, 31, 32);
-    font-size: 2rem;
-}
-
-.main-index__button{
+    font-size: 3rem; }
+  .main-index__p {
+    background: #353132;
+    font-size: 2rem; }
+  .main-index__button {
     margin-top: 1rem;
     display: flex;
     text-decoration: none;
@@ -111,7 +73,7 @@ body{
     height: 1.7rem;
     padding: 7px;
     margin-left: 20px;
-    background-color:#bd00ff;
+    background-color: #bd00ff;
     float: right;
     text-align: center;
     border: solid 1px aliceblue;
@@ -119,62 +81,45 @@ body{
     color: aliceblue;
     font-weight: bold;
     line-height: 15px;
-    font-family: 'Orbitron', sans-serif;
-}
-
-.main-index__button:hover{
+    font-family: 'Orbitron', sans-serif; }
+  .main-index__button:hover {
     background-image: url(../img/bg.gif);
     filter: invert(100%);
     color: aliceblue;
-    border: solid 1px black;
-}
+    border: solid 1px black; }
 
-/* --- ------- --- */
-/* --- PROJECT --- */
-/* --- ------- --- */
-
-.projects{
-    padding: 2rem;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 2rem;
-}
-
-.projects__article{
+.projects {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2rem; }
+  .projects__article {
     color: aliceblue;
-    background-color: rgba(189,0,255,0.2);
+    background-color: rgba(189, 0, 255, 0.2);
     padding: 2rem;
     display: flex;
     position: relative;
     flex-basis: 100%;
     flex-direction: column;
     justify-content: space-between;
-    align-items: start;
-}
-
-.projects__img{
-    width: 100%;
-}
-
-.projects__h2{
+    align-items: start; }
+  .projects__img {
+    width: 100%; }
+  .projects__h2 {
     font-weight: bold;
     position: absolute;
     top: 2rem;
     left: 2rem;
     background: #353132;
     border: solid 1px #bd00ff;
-    padding: 0.4rem 0.8rem;
-}
-
-.projects__p{
+    padding: 0.4rem 0.8rem; }
+  .projects__p {
     font-size: 1rem;
     padding-top: 1rem;
     text-align: justify;
-    font-weight: bold;
-}
-
-.projects__button{
+    font-weight: bold; }
+  .projects__button {
     margin-top: 1rem;
     display: flex;
     text-decoration: none;
@@ -183,62 +128,45 @@ body{
     width: 10rem;
     height: 2rem;
     padding: 0.5rem;
-    background-color:#bd00ff;
+    background-color: #bd00ff;
     text-align: center;
     border: solid 1px aliceblue;
     border-radius: 3px;
     color: aliceblue;
     font-weight: bold;
     line-height: 1rem;
-    font-family: 'Orbitron', sans-serif;    
-}
-
-.projects__button:hover{
+    font-family: 'Orbitron', sans-serif; }
+  .projects__button:hover {
     background-image: url(../img/bg.gif);
     filter: invert(100%);
     color: aliceblue;
-    border: solid 1px black;
-}
+    border: solid 1px black; }
 
-/* --- ----- --- */
-/* --- SKILL --- */
-/* --- ----- --- */
-
-.skills{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.skills__h2{
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly; }
+  .skills__h2 {
     padding-bottom: 2rem;
     font-size: 1.5rem;
-    color: aliceblue;
-}
-
-.skills__list{
+    color: aliceblue; }
+  .skills__list {
     text-align: center;
     border: solid #bd00ff;
     margin-right: 10%;
-    margin-left: 10%;
-}
-
-.skills__list-item{
+    margin-left: 10%; }
+  .skills__list-item {
     color: aliceblue;
     list-style-type: none;
     width: 15%;
     padding: 2rem;
     float: left;
     text-align: center;
-    font-weight: bold;
-}
-
-.skills__img{
-    width: 100%;
-}
-
-.skills__p{
+    font-weight: bold; }
+  .skills__img {
+    width: 100%; }
+  .skills__p {
     padding-top: 2rem;
     color: aliceblue;
     font-size: 1.2rem;
@@ -246,590 +174,391 @@ body{
     padding-left: 15%;
     line-height: 2.5rem;
     text-align: justify;
-    text-justify: inter-word;
-}
+    text-justify: inter-word; }
 
-/* --- ----- --- */
-/* --- ABOUT --- */
-/* --- ----- --- */
-
-.about{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    color: aliceblue;
-    margin-right: 15%;
-    margin-left: 15%;
-}
-
-.about__article{
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: aliceblue;
+  margin-right: 15%;
+  margin-left: 15%; }
+  .about__article {
     padding: 5rem;
-    text-align: center;
-}
-
-.about__h2{
+    text-align: center; }
+  .about__h2 {
     padding-bottom: 2rem;
-    font-size: 2rem;
-}
-
-.about__strong{
+    font-size: 2rem; }
+  .about__strong {
     color: #bd00ff;
-    font-size: 2rem;
-}
-
-.about__img{
+    font-size: 2rem; }
+  .about__img {
     padding: 2px;
-    background-image: url(../img/bg.gif);
-}
-
-.about__p{
+    background-image: url(../img/bg.gif); }
+  .about__p {
     padding-top: 2rem;
     text-align: justify;
     font-weight: bold;
-    line-height: 2.5rem;
-}
+    line-height: 2.5rem; }
 
-/* --- ------- --- */
-/* --- CONTACT --- */
-/* --- ------- --- */
-
-.contact{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact__fieldset{
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .contact__fieldset {
     width: 80%;
     border: solid #bd00ff;
     text-align: center;
     padding: 5%;
-    background-color: rgba(189,0,255,0.05);
-}
-
-.contact__legend{
+    background-color: rgba(189, 0, 255, 0.05); }
+  .contact__legend {
     color: aliceblue;
     font-size: 1.5rem;
     padding-right: 5%;
     padding-left: 5%;
     float: none;
-    width: 80%;
-}
-
-.contact__labels{
+    width: 80%; }
+  .contact__labels {
     color: aliceblue;
-    font-size: 1.5rem;
-}
-
-.contact__inputs{
+    font-size: 1.5rem; }
+  .contact__inputs {
     height: 2rem;
     width: 30rem;
     text-align: center;
-    border: solid 2px #bd00ff;
-}
-
-.contact__textarea{
+    border: solid 2px #bd00ff; }
+  .contact__textarea {
     height: 10rem;
     width: 30rem;
     padding: 1%;
-    text-align: center;  
+    text-align: center;
     font-size: 1rem;
-    border: solid 2px #bd00ff;
-}
-
-.contact__button{
+    border: solid 2px #bd00ff; }
+  .contact__button {
     margin-left: 1rem;
     margin-right: 1rem;
     text-decoration: none;
     width: 8rem;
     height: 1.7rem;
     padding: 0.5rem;
-    background-color:#bd00ff;
+    background-color: #bd00ff;
     text-align: center;
     border: solid 1px aliceblue;
     border-radius: 3px;
     color: aliceblue;
     font-weight: bold;
     font-size: 1rem;
-    line-height: 0.5rem;
-}
-
-.contact__button:hover{
+    line-height: 0.5rem; }
+  .contact__button:hover {
     background-image: url(../img/bg.gif);
     filter: invert(100%);
     color: aliceblue;
-    border: solid 1px black;
-}
+    border: solid 1px black; }
 
-/* --- ------ --- */
-/* --- FOOTER --- */
-/* --- ------ --- */
-
-.footer{
-    padding-top: 1.7rem;
-    padding-bottom: 1.7rem;
-    text-align: center;
-    justify-content: center;
-    color: aliceblue;
-}
-
-.footer__img{
-    filter: invert(100%);
-}
-
-.footer__img:hover{
-    filter:invert(0%);
-}
+.footer {
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
+  text-align: center;
+  justify-content: center;
+  color: aliceblue; }
+  .footer__img {
+    filter: invert(100%); }
+  .footer__img:hover {
+    filter: invert(0%); }
 
 /* --- tablets --- */
 @media (max-width: 768px) {
-
-    /* --- ----- --- */
-    /* --- INDEX --- */
-    /* --- ----- --- */
-
-    .main-index__h2{
-        font-size: 3rem;
-    }
-
-    .main-index__strong{
-        font-size: 3rem;
-    }
-
-    /* --- ------- --- */
-    /* --- PROJECT --- */
-    /* --- ------- --- */
-
-    .projects{
-        padding: 2rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-    }
-    
-    .projects__article{
-        padding: 2rem;
-    }
-    
-    .projects__h2{
-        top: 2rem;
-        left: 2rem;
-    }
-    
-    .projects__p{
-        font-size: 1.5rem;
-        font-weight: 400;
-    }
-
-    /* --- ----- --- */
-    /* --- SKILL --- */
-    /* --- ----- --- */
-
-    .skills__h2{
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        padding-top: 5rem;
-        padding-bottom: 5rem;
-        padding: 1rem;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .skills__list{
-        margin-right: 5%;
-        margin-left: 5%;
-        text-align: center;
-        padding-left: 1rem;
-    }
-
-    .skills__list-item{
-        width: 25%;
-        padding-left: 10px;
-        font-size: 1rem;
-        font-weight:bold;
-        text-align: center;
-    }
-
-    .skills__p{
-        font-size: 1.5rem;
-        padding-right: 5%;
-        padding-left: 5%;
-    }
-
-    /* --- ----- --- */
-    /* --- ABOUT --- */
-    /* --- ----- --- */
-
-    .about{
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    .about__article{
-        padding: 1rem;
-    }
-
-    .about__h2{
-        padding-bottom: 2rem;
-        font-size: 2rem;
-    }
-
-    .about__strong{
-        font-size: 2rem;
-    }
-
-    .about__p{
-        padding: 1rem;
-        line-height: 1.5rem;
-        font-size: 1.2rem;
-    }
-
-    /* --- ------- --- */
-    /* --- CONTACT --- */
-    /* --- ------- --- */
-
-    .contact__legend{
-        color: aliceblue;
-        font-size: 1.2rem;
-        width: 100%;
-    }
-
-    .contact__labels{
-        font-size: 1.5rem;
-        width: 100%;
-    }
-
-    .contact__inputs{
-        width: 90%;
-    }
-
-    .contact__textarea{
-        height: 10rem;
-        width: 90%;
-        font-size: 1.5rem;
-        border: solid 2px #bd00ff
-    }
-
-    .contact__button{
-        width: 8rem;
-    }
-}
+  /* --- ----- --- */
+  /* --- INDEX --- */
+  /* --- ----- --- */
+  .main-index__h2 {
+    font-size: 3rem; }
+  .main-index__strong {
+    font-size: 3rem; }
+  /* --- ------- --- */
+  /* --- PROJECT --- */
+  /* --- ------- --- */
+  .projects {
+    padding: 2rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr); }
+  .projects__article {
+    padding: 2rem; }
+  .projects__h2 {
+    top: 2rem;
+    left: 2rem; }
+  .projects__p {
+    font-size: 1.5rem;
+    font-weight: 400; }
+  /* --- ----- --- */
+  /* --- SKILL --- */
+  /* --- ----- --- */
+  .skills__h2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold; }
+  .skills__list {
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: center;
+    padding-left: 1rem; }
+  .skills__list-item {
+    width: 25%;
+    padding-left: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center; }
+  .skills__p {
+    font-size: 1.5rem;
+    padding-right: 5%;
+    padding-left: 5%; }
+  /* --- ----- --- */
+  /* --- ABOUT --- */
+  /* --- ----- --- */
+  .about {
+    margin-right: 0;
+    margin-left: 0; }
+  .about__article {
+    padding: 1rem; }
+  .about__h2 {
+    padding-bottom: 2rem;
+    font-size: 2rem; }
+  .about__strong {
+    font-size: 2rem; }
+  .about__p {
+    padding: 1rem;
+    line-height: 1.5rem;
+    font-size: 1.2rem; }
+  /* --- ------- --- */
+  /* --- CONTACT --- */
+  /* --- ------- --- */
+  .contact__legend {
+    color: aliceblue;
+    font-size: 1.2rem;
+    width: 100%; }
+  .contact__labels {
+    font-size: 1.5rem;
+    width: 100%; }
+  .contact__inputs {
+    width: 90%; }
+  .contact__textarea {
+    height: 10rem;
+    width: 90%;
+    font-size: 1.5rem;
+    border: solid 2px #bd00ff; }
+  .contact__button {
+    width: 8rem; } }
 
 /* --- celulares grandes --- */
 @media (max-width: 425px) {
-
-    /* --- ----- --- */
-    /* --- INDEX --- */
-    /* --- ----- --- */
-
-    .main-index__section{
-        padding-top: 30%;
-        padding-bottom: 30%;
-        padding-right: 5%;
-        padding-left: 5%;
-        color: aliceblue;
-    }
-
-    .main-index__h2{
-        font-size: 2rem;
-    }
-
-    .main-index__strong{
-        font-size: 2rem;
-    }
-
-    .main-index__p{
-        font-size: 1.5rem;
-    }
-
-    /* --- ------- --- */
-    /* --- PROJECT --- */
-    /* --- ------- --- */
-
-    .projects{
-        padding: 1rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-    }
-    
-    .projects__article{
-        padding: 1rem;
-    }
-    
-    .projects__h2{
-        top: 1rem;
-        left: 1rem;
-    }
-    
-    .projects__p{
-        font-size: 1rem;
-        font-weight: 100;
-    }
-    
-    .projects__button{
-        width: 7rem;
-        height: 2rem;
-        padding: 0.3rem;
-        line-height: 0.5rem;
-        font-size: small;  
-    }
-
-    /* --- ----- --- */
-    /* --- SKILL --- */
-    /* --- ----- --- */
-
-    .skills__h2{
-        padding-top: 3rem;
-        padding: 1rem;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .skills__list{
-        margin-right: 2%;
-        margin-left: 2%;
-        text-align: center;
-        padding-left: 1rem;
-    }
-
-    .skills__list-item{
-        width: 25%;
-        padding-left: 10px;
-        font-size: 1rem;
-        font-weight:bold;
-        text-align: center;
-    }
-
-    .skills__p{
-        font-size: 1.2rem;
-        padding-right: 10%;
-        padding-left: 10%;
-    }
-
-    /* --- ----- --- */
-    /* --- ABOUT --- */
-    /* --- ----- --- */
-
-    .about{
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    .about__article{
-        padding: 0;
-    }
-
-    .about__h2{
-        padding-bottom: 1rem;
-        font-size: 1.5rem;
-    }
-
-    .about__strong{
-        font-size: 1.5rem;
-    }
-
-    .about__p{
-        padding: 0.7rem;
-        line-height: 1.5rem;
-    }
-
-    /* --- ------- --- */
-    /* --- CONTACT --- */
-    /* --- ------- --- */
-
-    .contact__legend{
-        color: aliceblue;
-        font-size: 1.2rem;
-        width: 100%;
-        float: left;
-    }
-
-    .contact__labels{
-        font-size: 1rem;
-        width: 100%;
-    }
-
-    .contact__inputs{
-        width: 90%;
-    }
-
-    .contact__textarea{
-        height: 10rem;
-        width: 90%;
-        font-size: 1rem;
-        border: solid 2px #bd00ff
-    }
-
-    .contact__button{
-        width: 5rem;
-    }
-}
+  /* --- ----- --- */
+  /* --- INDEX --- */
+  /* --- ----- --- */
+  .main-index__section {
+    padding-top: 30%;
+    padding-bottom: 30%;
+    padding-right: 5%;
+    padding-left: 5%;
+    color: aliceblue; }
+  .main-index__h2 {
+    font-size: 2rem; }
+  .main-index__strong {
+    font-size: 2rem; }
+  .main-index__p {
+    font-size: 1.5rem; }
+  /* --- ------- --- */
+  /* --- PROJECT --- */
+  /* --- ------- --- */
+  .projects {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr); }
+  .projects__article {
+    padding: 1rem; }
+  .projects__h2 {
+    top: 1rem;
+    left: 1rem; }
+  .projects__p {
+    font-size: 1rem;
+    font-weight: 100; }
+  .projects__button {
+    width: 7rem;
+    height: 2rem;
+    padding: 0.3rem;
+    line-height: 0.5rem;
+    font-size: small; }
+  /* --- ----- --- */
+  /* --- SKILL --- */
+  /* --- ----- --- */
+  .skills__h2 {
+    padding-top: 3rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold; }
+  .skills__list {
+    margin-right: 2%;
+    margin-left: 2%;
+    text-align: center;
+    padding-left: 1rem; }
+  .skills__list-item {
+    width: 25%;
+    padding-left: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center; }
+  .skills__p {
+    font-size: 1.2rem;
+    padding-right: 10%;
+    padding-left: 10%; }
+  /* --- ----- --- */
+  /* --- ABOUT --- */
+  /* --- ----- --- */
+  .about {
+    margin-right: 0;
+    margin-left: 0; }
+  .about__article {
+    padding: 0; }
+  .about__h2 {
+    padding-bottom: 1rem;
+    font-size: 1.5rem; }
+  .about__strong {
+    font-size: 1.5rem; }
+  .about__p {
+    padding: 0.7rem;
+    line-height: 1.5rem; }
+  /* --- ------- --- */
+  /* --- CONTACT --- */
+  /* --- ------- --- */
+  .contact__legend {
+    color: aliceblue;
+    font-size: 1.2rem;
+    width: 100%;
+    float: left; }
+  .contact__labels {
+    font-size: 1rem;
+    width: 100%; }
+  .contact__inputs {
+    width: 90%; }
+  .contact__textarea {
+    height: 10rem;
+    width: 90%;
+    font-size: 1rem;
+    border: solid 2px #bd00ff; }
+  .contact__button {
+    width: 5rem; } }
 
 /* --- celulares pequeños --- */
 @media (max-width: 320px) {
-
-    /* --- ----- --- */
-    /* --- INDEX --- */
-    /* --- ----- --- */
-
-    .main-index{
-        background-size:auto;
-    }
-
-    .main-index__section{
-        margin-bottom: 10%;
-        margin-top: 10%;
-        padding-top: 20%;
-        padding-bottom: 20%;
-        padding-right: 5%;
-        padding-left: 5%;
-        color: aliceblue;
-    }
-
-    .main-index__h2{
-        font-size: 1.2rem;
-    }
-
-    .main-index__strong{
-        font-size: 1.2rem;
-    }
-
-    .main-index__p{
-        font-size: 0.8rem;
-    }
-
-    .main-index__button{
-        width: 6rem;
-        height: 1.7rem;
-        padding: 5px;
-        margin-left: 5px;
-        border-radius: 3px;
-        font-size: 0.8rem;
-        font-weight: 100;
-        line-height: 15px;
-    }
-
-    /* --- ------- --- */
-    /* --- PROJECT --- */
-    /* --- ------- --- */
-
-    .projects{
-        padding: 1rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
-    }
-
-    .projects__article{
-        padding: 0.5rem;
-    }
-    
-    .projects__h2{
-        top: 0.5rem;
-        left: 0.5rem;
-    }
-    
-    .projects__p{
-        font-size: 0.8rem;
-        font-weight: 100;
-    }
-    
-    .projects__button{
-        width: 7rem;
-        height: 2rem;
-        padding: 0.3rem;
-        line-height: 0.5rem;
-        font-size: small;  
-    }
-
-    /* --- ----- --- */
-    /* --- SKILL --- */
-    /* --- ----- --- */
-
-    .skills__h2{
-        padding-top: 3rem;
-        padding: 1rem;
-        text-align: center;
-        font-weight: bold;
-    }
-
-    .skills__list{
-        margin-right: 2%;
-        margin-left: 2%;
-        text-align: center;
-        padding-left: 1rem;
-    }
-
-    .skills__list-item{
-        width: 25%;
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 0.8rem;
-        font-weight:bold;
-        text-align: center;
-    }
-
-    .skills__p{
-        font-size: 1.2rem;
-        padding-right: 10%;
-        padding-left: 10%;
-    }
-
-    /* --- ----- --- */
-    /* --- ABOUT --- */
-    /* --- ----- --- */
-
-    .about{
-        margin-right: 0;
-        margin-left: 0;
-    }
-
-    .about__article{
-        padding: 0;
-    }
-
-    .about__h2{
-        padding-bottom: 1rem;
-        font-size: 1.5rem;
-    }
-
-    .about__strong{
-        font-size: 1.5rem;
-    }
-
-    .about__p{
-        padding: 0.7rem;
-        line-height: 1.5rem;
-    }
-
-    /* --- ------- --- */
-    /* --- CONTACT --- */
-    /* --- ------- --- */
-
-    .contact__legend{
-        color: aliceblue;
-        font-size: 1.2rem;
-        width: 100%;
-        float: left;
-    }
-
-    .contact__labels{
-        font-size: 1rem;
-        width: 100%;
-    }
-
-    .contact__inputs{
-        width: 90%;
-    }
-
-    .contact__textarea{
-        height: 10rem;
-        width: 90%;
-        font-size: 1rem;
-        border: solid 2px #bd00ff
-    }
-
-    .contact__button{
-        width: 5rem;
-    }
-    
-}
+  /* --- ----- --- */
+  /* --- INDEX --- */
+  /* --- ----- --- */
+  .main-index {
+    background-size: auto; }
+  .main-index__section {
+    margin-bottom: 10%;
+    margin-top: 10%;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    padding-right: 5%;
+    padding-left: 5%;
+    color: aliceblue; }
+  .main-index__h2 {
+    font-size: 1.2rem; }
+  .main-index__strong {
+    font-size: 1.2rem; }
+  .main-index__p {
+    font-size: 0.8rem; }
+  .main-index__button {
+    width: 6rem;
+    height: 1.7rem;
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    font-weight: 100;
+    line-height: 15px; }
+  /* --- ------- --- */
+  /* --- PROJECT --- */
+  /* --- ------- --- */
+  .projects {
+    padding: 1rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 1fr); }
+  .projects__article {
+    padding: 0.5rem; }
+  .projects__h2 {
+    top: 0.5rem;
+    left: 0.5rem; }
+  .projects__p {
+    font-size: 0.8rem;
+    font-weight: 100; }
+  .projects__button {
+    width: 7rem;
+    height: 2rem;
+    padding: 0.3rem;
+    line-height: 0.5rem;
+    font-size: small; }
+  /* --- ----- --- */
+  /* --- SKILL --- */
+  /* --- ----- --- */
+  .skills__h2 {
+    padding-top: 3rem;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold; }
+  .skills__list {
+    margin-right: 2%;
+    margin-left: 2%;
+    text-align: center;
+    padding-left: 1rem; }
+  .skills__list-item {
+    width: 25%;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-align: center; }
+  .skills__p {
+    font-size: 1.2rem;
+    padding-right: 10%;
+    padding-left: 10%; }
+  /* --- ----- --- */
+  /* --- ABOUT --- */
+  /* --- ----- --- */
+  .about {
+    margin-right: 0;
+    margin-left: 0; }
+  .about__article {
+    padding: 0; }
+  .about__h2 {
+    padding-bottom: 1rem;
+    font-size: 1.5rem; }
+  .about__strong {
+    font-size: 1.5rem; }
+  .about__p {
+    padding: 0.7rem;
+    line-height: 1.5rem; }
+  /* --- ------- --- */
+  /* --- CONTACT --- */
+  /* --- ------- --- */
+  .contact__legend {
+    color: aliceblue;
+    font-size: 1.2rem;
+    width: 100%;
+    float: left; }
+  .contact__labels {
+    font-size: 1rem;
+    width: 100%; }
+  .contact__inputs {
+    width: 90%; }
+  .contact__textarea {
+    height: 10rem;
+    width: 90%;
+    font-size: 1rem;
+    border: solid 2px #bd00ff; }
+  .contact__button {
+    width: 5rem; } }

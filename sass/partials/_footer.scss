@@ -1,0 +1,15 @@
+.footer{
+    padding-top: 1.7rem;
+    padding-bottom: 1.7rem;
+    text-align: center;
+    justify-content: center;
+    color: aliceblue;
+
+    &__img{
+        filter: invert(100%);
+    }
+    
+    &__img:hover{
+        filter:invert(0%);
+    }
+}
