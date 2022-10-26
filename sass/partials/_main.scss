@@ -7,13 +7,13 @@
 
     &__section{
         padding: 15%;
-        color: aliceblue;
+        color: $mainfontcolor;
     }
     
     &__article{
         background: $mainbackgroundcolor;
         padding: 1rem;
-        color: aliceblue;
+        color: $mainfontcolor;
         border: solid $mainelementcolor;
     }
     
@@ -44,9 +44,9 @@
         background-color:$mainelementcolor;
         float: right;
         text-align: center;
-        border: solid 1px aliceblue;
+        border: solid 1px $mainfontcolor;
         border-radius: 3px;
-        color: aliceblue;
+        color: $mainfontcolor;
         font-weight: bold;
         line-height: 15px;
         font-family: 'Orbitron', sans-serif;
@@ -55,7 +55,7 @@
     &__button:hover{
         background-image: url(../img/bg.gif);
         filter: invert(100%);
-        color: aliceblue;
+        color: $mainfontcolor;
         border: solid 1px black;
     }
 }

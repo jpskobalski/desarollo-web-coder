@@ -7,7 +7,7 @@
     &__h2{
         padding-bottom: 2rem;
         font-size: 1.5rem;
-        color: aliceblue;
+        color: $mainfontcolor;
     }
     
     &__list{
@@ -18,7 +18,7 @@
     }
     
     &__list-item{
-        color: aliceblue;
+        color: $mainfontcolor;
         list-style-type: none;
         width: 15%;
         padding: 2rem;
@@ -33,7 +33,7 @@
     
     &__p{
         padding-top: 2rem;
-        color: aliceblue;
+        color: $mainfontcolor;
         font-size: 1.2rem;
         padding-right: 15%;
         padding-left: 15%;

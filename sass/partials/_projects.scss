@@ -6,7 +6,7 @@
     grid-gap: 2rem;
 
     &__article{
-        color: aliceblue;
+        color: $mainfontcolor;
         background-color: rgba(189,0,255,0.2);
         padding: 2rem;
         display: flex;
@@ -49,9 +49,9 @@
         padding: 0.5rem;
         background-color:$mainelementcolor;
         text-align: center;
-        border: solid 1px aliceblue;
+        border: solid 1px $mainfontcolor;
         border-radius: 3px;
-        color: aliceblue;
+        color: $mainfontcolor;
         font-weight: bold;
         line-height: 1rem;
         font-family: 'Orbitron', sans-serif;    
@@ -60,7 +60,7 @@
     &__button:hover{
         background-image: url(../img/bg.gif);
         filter: invert(100%);
-        color: aliceblue;
+        color: $mainfontcolor;
         border: solid 1px black;
     }
 }

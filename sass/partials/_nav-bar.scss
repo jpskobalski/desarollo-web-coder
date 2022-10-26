@@ -8,7 +8,7 @@
 
     &__logo{
         text-decoration: none;
-        color:aliceblue;
+        color:$mainfontcolor;
         font-family: 'Orbitron', sans-serif;
         font-size: 2rem;
     }
@@ -29,7 +29,7 @@
     }
     
     &__anchor{
-        color: aliceblue;
+        color: $mainfontcolor;
         text-decoration: none;
         font-size: 1.5rem;
     }
@@ -44,6 +44,6 @@
     }
     
     &__active-item:hover{
-        text-decoration: overline aliceblue;
+        text-decoration: overline $mainfontcolor;
     }
 }

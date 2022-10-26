@@ -12,7 +12,7 @@
     }
     
     &__legend{
-        color: aliceblue;
+        color: $mainfontcolor;
         font-size: 1.5rem;
         padding-right: 5%;
         padding-left: 5%;
@@ -21,7 +21,7 @@
     }
     
     &__labels{
-        color: aliceblue;
+        color: $mainfontcolor;
         font-size: 1.5rem;
     }
     
@@ -50,9 +50,9 @@
         padding: 0.5rem;
         background-color:$mainelementcolor;
         text-align: center;
-        border: solid 1px aliceblue;
+        border: solid 1px $mainfontcolor;
         border-radius: 3px;
-        color: aliceblue;
+        color: $mainfontcolor;
         font-weight: bold;
         font-size: 1rem;
         line-height: 0.5rem;
@@ -61,7 +61,7 @@
     &__button:hover{
         background-image: url(../img/bg.gif);
         filter: invert(100%);
-        color: aliceblue;
+        color: $mainfontcolor;
         border: solid 1px black;
     }
 }
