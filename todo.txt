@@ -1,5 +1,0 @@
-TODO:
-- keywords en el head (buscar en google las plabras para software development)
-- chequear titulos- ver si hay mejores que los actuales
-- meta descriptions: contiene un resumen del contenido de la pagina
-- agregar contenido y remover trodos los LOREM - acortarlos mucho
