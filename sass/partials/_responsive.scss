@@ -111,7 +111,7 @@
 
     .contact{
         &__legend{
-            color: $mainfontcolor;
+            color: map-get($colorpalet, "mainfontcolor");
             font-size: 1.2rem;
             width: 100%;
         }
@@ -129,7 +129,7 @@
             height: 10rem;
             width: 90%;
             font-size: 1.5rem;
-            border: solid 2px $mainelementcolor
+            border: solid 2px map-get($colorpalet, "mainelementcolor")
         }
     
         &__button{
@@ -151,7 +151,7 @@
             padding-bottom: 30%;
             padding-right: 5%;
             padding-left: 5%;
-            color: $mainfontcolor;
+            color: map-get($colorpalet, "mainfontcolor");
         }
     
         &__h2{
@@ -267,7 +267,7 @@
 
     .contact{
         &__legend{
-            color: $mainfontcolor;
+            color: map-get($colorpalet, "mainfontcolor");
             font-size: 1.2rem;
             width: 100%;
             float: left;
@@ -286,7 +286,7 @@
             height: 10rem;
             width: 90%;
             font-size: 1rem;
-            border: solid 2px $mainelementcolor
+            border: solid 2px map-get($colorpalet, "mainelementcolor")
         }
     
         &__button{
@@ -312,7 +312,7 @@
             padding-bottom: 20%;
             padding-right: 5%;
             padding-left: 5%;
-            color: $mainfontcolor;
+            color: map-get($colorpalet, "mainfontcolor");
         }
     
         &__h2{
@@ -440,7 +440,7 @@
 
     .contact{
         &__legend{
-            color: $mainfontcolor;
+            color: map-get($colorpalet, "mainfontcolor");
             font-size: 1.2rem;
             width: 100%;
             float: left;
@@ -459,7 +459,7 @@
             height: 10rem;
             width: 90%;
             font-size: 1rem;
-            border: solid 2px $mainelementcolor
+            border: solid 2px map-get($colorpalet, "mainelementcolor")
         }
     
         &__button{

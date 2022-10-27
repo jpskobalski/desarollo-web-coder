@@ -5,14 +5,14 @@
 
     &__section{
         padding: 15%;
-        color: $mainfontcolor;
+        color: map-get($colorpalet, "mainfontcolor");
     }
     
     &__article{
-        background: $mainbackgroundcolor;
+        background: map-get($colorpalet, "mainbackgroundcolor");
         padding: 1rem;
-        color: $mainfontcolor;
-        border: solid $mainelementcolor;
+        color: map-get($colorpalet, "mainfontcolor");
+        border: solid map-get($colorpalet, "mainelementcolor");
     }
     
     &__h2{
@@ -20,38 +20,35 @@
     }
     
     &__strong{
-        color: $mainelementcolor;
+        color: map-get($colorpalet, "mainelementcolor");
         font-size: 3rem;
     }
     
     &__p{
-        background: $mainbackgroundcolor;
+        background: map-get($colorpalet, "mainbackgroundcolor");
         font-size: 2rem;
     }
     
     &__button{
-        margin-top: 1rem;
         @include supercenter;
+        margin-top: 1rem;
         text-decoration: none;
         width: 8rem;
         height: 1.7rem;
         padding: 7px;
         margin-left: 20px;
-        background-color:$mainelementcolor;
+        background-color:map-get($colorpalet, "mainelementcolor");
         float: right;
         text-align: center;
-        border: solid 1px $mainfontcolor;
+        border: solid 1px map-get($colorpalet, "mainfontcolor");
         border-radius: 3px;
-        color: $mainfontcolor;
+        color: map-get($colorpalet, "mainfontcolor");
         font-weight: bold;
         line-height: 15px;
         font-family: 'Orbitron', sans-serif;
-    }
     
-    &__button:hover{
-        background-image: url(../img/bg.gif);
-        filter: invert(100%);
-        color: $mainfontcolor;
-        border: solid 1px black;
+        &:hover{
+            @extend .buttonhover;
+        }
     }
 }

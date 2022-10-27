@@ -1,7 +1,7 @@
 .about{
     @include supercenter;
     flex-direction: column;
-    color: $mainfontcolor;
+    color: map-get($colorpalet, "mainfontcolor");
 
     &__article{
         padding: 5rem;
@@ -14,7 +14,7 @@
     }
     
     &__strong{
-        color: $mainelementcolor;
+        color: map-get($colorpalet, "mainelementcolor");
         font-size: 2rem;
     }
     

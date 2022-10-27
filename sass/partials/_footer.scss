@@ -3,7 +3,7 @@
     padding-bottom: 1.7rem;
     text-align: center;
     justify-content: center;
-    color: $mainfontcolor;
+    color: map-get($colorpalet, "mainfontcolor");
 
     &__img{
         filter: invert(100%);

@@ -1,4 +1,10 @@
 @charset "UTF-8";
+.buttonhover, .main-index__button:hover, .projects__button:hover {
+  background-image: url(../img/bg.gif);
+  filter: invert(100%);
+  color: aliceblue;
+  border: solid 1px black; }
+
 * {
   margin: 0;
   padding: 0;
@@ -64,10 +70,10 @@ body {
     background: #353132;
     font-size: 2rem; }
   .main-index__button {
-    margin-top: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 1rem;
     text-decoration: none;
     width: 8rem;
     height: 1.7rem;
@@ -82,11 +88,6 @@ body {
     font-weight: bold;
     line-height: 15px;
     font-family: 'Orbitron', sans-serif; }
-  .main-index__button:hover {
-    background-image: url(../img/bg.gif);
-    filter: invert(100%);
-    color: aliceblue;
-    border: solid 1px black; }
 
 .projects {
   padding: 2rem;
@@ -111,7 +112,7 @@ body {
     position: absolute;
     top: 2rem;
     left: 2rem;
-    background: #353132;
+    background: #bd00ff;
     border: solid 1px #bd00ff;
     padding: 0.4rem 0.8rem; }
   .projects__p {
@@ -121,9 +122,6 @@ body {
     font-weight: bold; }
   .projects__button {
     margin-top: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-decoration: none;
     width: 10rem;
     height: 2rem;
@@ -136,11 +134,6 @@ body {
     font-weight: bold;
     line-height: 1rem;
     font-family: 'Orbitron', sans-serif; }
-  .projects__button:hover {
-    background-image: url(../img/bg.gif);
-    filter: invert(100%);
-    color: aliceblue;
-    border: solid 1px black; }
 
 .skills {
   display: flex;

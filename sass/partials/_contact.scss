@@ -3,14 +3,14 @@
 
     &__fieldset{
         width: 80%;
-        border: solid $mainelementcolor;
+        border: solid map-get($colorpalet, "mainelementcolor");
         text-align: center;
         padding: 5%;
         background-color: rgba(189,0,255,0.05);
     }
     
     &__legend{
-        color: $mainfontcolor;
+        color: map-get($colorpalet, "mainfontcolor");
         font-size: 1.5rem;
         padding-right: 5%;
         padding-left: 5%;
@@ -19,7 +19,7 @@
     }
     
     &__labels{
-        color: $mainfontcolor;
+        color: map-get($colorpalet, "mainfontcolor");
         font-size: 1.5rem;
     }
     
@@ -27,7 +27,7 @@
         height: 2rem;
         width: 30rem;
         text-align: center;
-        border: solid 2px $mainelementcolor;
+        border: solid 2px map-get($colorpalet, "mainelementcolor");
     }
     
     &__textarea{
@@ -36,7 +36,7 @@
         padding: 1%;
         text-align: center;  
         font-size: 1rem;
-        border: solid 2px $mainelementcolor;
+        border: solid 2px map-get($colorpalet, "mainelementcolor");
     }
     
     &__button{
@@ -46,11 +46,11 @@
         width: 8rem;
         height: 1.7rem;
         padding: 0.5rem;
-        background-color:$mainelementcolor;
+        background-color:map-get($colorpalet, "mainelementcolor");
         text-align: center;
-        border: solid 1px $mainfontcolor;
+        border: solid 1px map-get($colorpalet, "mainfontcolor");
         border-radius: 3px;
-        color: $mainfontcolor;
+        color: map-get($colorpalet, "mainfontcolor");
         font-weight: bold;
         font-size: 1rem;
         line-height: 0.5rem;
@@ -59,7 +59,7 @@
     &__button:hover{
         background-image: url(../img/bg.gif);
         filter: invert(100%);
-        color: $mainfontcolor;
+        color: map-get($colorpalet, "mainfontcolor");
         border: solid 1px black;
     }
 }
