@@ -92,9 +92,11 @@ body {
 .projects {
   padding: 2rem;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(1, 0.75fr);
-  grid-gap: 2rem; }
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 0.75fr);
+  grid-gap: 2rem;
+  padding-left: 15%;
+  padding-right: 15%; }
   .projects__article {
     color: aliceblue;
     background-color: rgba(189, 0, 255, 0.2);

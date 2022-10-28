@@ -1,9 +1,11 @@
 .projects{
     padding: 2rem;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 0.75fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 0.75fr);
     grid-gap: 2rem;
+    padding-left: 15%;
+    padding-right: 15%;
 
     &__article{
         color: map-get($colorpalet, "mainfontcolor");
