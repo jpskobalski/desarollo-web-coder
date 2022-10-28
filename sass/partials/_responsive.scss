@@ -21,8 +21,7 @@
 
     .projects{
         padding: 2rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
+        @include projectgrids-responsive($numberprojects);
     
         &__article{
             padding: 2rem;
@@ -173,8 +172,7 @@
 
     .projects{
         padding: 1rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
+        @include projectgrids-responsive($numberprojects);
     
         &__article{
             padding: 1rem;
@@ -345,8 +343,7 @@
 
     .projects{
         padding: 1rem;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6, 1fr);
+        @include projectgrids-responsive($numberprojects);
 
         &__article{
             padding: 0.5rem;

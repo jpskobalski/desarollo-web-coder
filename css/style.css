@@ -92,8 +92,8 @@ body {
 .projects {
   padding: 2rem;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 0.75fr);
   grid-gap: 2rem; }
   .projects__article {
     color: aliceblue;
@@ -274,7 +274,7 @@ body {
   .projects {
     padding: 2rem;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr); }
+    grid-template-rows: repeat(4, 0.5fr); }
     .projects__article {
       padding: 2rem; }
     .projects__h2 {
@@ -370,7 +370,7 @@ body {
   .projects {
     padding: 1rem;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr); }
+    grid-template-rows: repeat(4, 0.5fr); }
     .projects__article {
       padding: 1rem; }
     .projects__h2 {
@@ -482,7 +482,7 @@ body {
   .projects {
     padding: 1rem;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 1fr); }
+    grid-template-rows: repeat(4, 0.5fr); }
     .projects__article {
       padding: 0.5rem; }
     .projects__h2 {
