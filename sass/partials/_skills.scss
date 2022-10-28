@@ -13,8 +13,8 @@
     &__list{
         text-align: center;
         border: solid map-get($colorpalet, "mainelementcolor");
-        margin-right: 10%;
-        margin-left: 10%;
+        margin-right: 15%;
+        margin-left: 15%;
     }
     
     &__list-item{
@@ -24,7 +24,10 @@
         padding: 2rem;
         float: left;
         text-align: center;
+        font-size: 1rem;
         font-weight: bold;
+        @include supercenter;
+        flex-direction: column;
     }
     
     &__img{
