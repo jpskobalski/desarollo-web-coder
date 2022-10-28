@@ -1,0 +1,18 @@
+@mixin projectgrids-responsive($value){
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat($value, 0.5fr);
+}
+
+@mixin supercenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Clase general del hover de los buttons
+.buttonhover{
+  background-image: url(../img/bg.gif);
+  filter: invert(100%);
+  color: map-get($colorpalet, "mainfontcolor");
+  border: solid 1px black;
+}
